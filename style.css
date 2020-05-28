@@ -1,3 +1,119 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
+/*RESETS*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-header {
+  height: 100vh;
+  color: #f4f4f4f4;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/e94T5ag-9x0") center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /* .main-header__nav */
+}
+.main-header__nav {
+  text-align: center;
+}
+
+.nav {
+  /* .nav__list */
+  /* .nav__item */
+  /* .nav__link */
+  /* .nav__title */
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item {
+  width: 200px;
+}
+.nav__link {
+  background-color: rgba(69, 61, 55, 0.4);
+  border-radius: 10px;
+  padding: 0.8rem 0;
+  width: 100%;
+  margin: 0.2rem 0;
+  display: inline-block;
+}
+.nav__title {
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.header {
+  /* .header__column */
+  /* .header__sub-title */
+  /* .header__title */
+  /* .header__description */
+  /* .header__button */
+}
+.intro {
+  /* .intro__sub-title */
+  /* .intro__row */
+  /* .intro__column */
+}
+.item-info {
+  /* .item-info__icon */
+  /* .item-info__title */
+  /* .item-info__text */
+}
+.philosophy {
+  /* .philosophy__sidebar */
+  /* .philosophy__img */
+}
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.sidebar {
+  /* .sidebar__aside */
+  /* .sidebar__quote */
+  /* .sidebar__footer */
+  /* .sidebar__img */
+}
+.experience {
+  /* .experience__sidebar */
+  /* .experience__title */
+  /* .experience__text */
+}
+.works {
+  /* .works__wrap */
+  /* .works__title */
+  /* .works__row */
+  /* .works__column */
+  /* .works__button */
+}
+.goals {
+  /* .goals__sidebar */
+}
+.video {
+  /* .video__button */
+  /* .video__title */
+}
+.main-footer {
+  /* .main-footer__wrap */
+  /* .main-footer__body */
+  /* .main-footer__subscribe */
+  /* .main-footer__title */
+  /* .main-footer__submit */
+  /* .main-footer__more */
+  /* .main-footer__text */
+  /* .main-footer__social */
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,11 @@
           content="ie=edge">
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
 
     <title>
         Terso</title>
@@ -15,12 +20,12 @@
 <body>
 
 
-<header id="main-header">
+<header class="main-header">
     <div class="main-header__nav nav">
         <ul class="nav__list">
-            <li class="nav__item">
+            <li class="nav__item logo">
                 <a href="#"
-                   class="nav__link nav__title logo">terso</a>
+                   class="nav__link nav__title">terso</a>
             </li>
             <li class="nav__item">
                 <a href="#"
@@ -49,39 +54,39 @@
                     Us</a>
             </li>
         </ul>
-        <div class="header__column column">
-            <h3 class="sub-title header__sub-title">
-                Agency</h3>
-            <h2 class="header__title title">
-                Hello,
-                We
-                Are
-                An
-                Experienced
-                Design
-                Agency</h2>
-            <p class="header__description description">
-                With
-                more
-                than
-                20
-                years
-                of
-                experience
-                we
-                can
-                deliver
-                the
-                best
-                product
-                design.</p>
-            <a href="#"
-               class="header__button button">Learn
-                more
-                <ion-icon
-                        name="arrow-forward-outline"></ion-icon>
-            </a>
-        </div>
+    </div>
+    <div class="header__column column">
+        <h3 class="sub-title header__sub-title">
+            Agency</h3>
+        <h2 class="header__title title">
+            Hello,
+            We
+            Are
+            An
+            Experienced
+            Design
+            Agency</h2>
+        <p class="header__description description">
+            With
+            more
+            than
+            20
+            years
+            of
+            experience
+            we
+            can
+            deliver
+            the
+            best
+            product
+            design.</p>
+        <a href="#"
+           class="header__button button">Learn
+            more
+            <ion-icon
+                    name="arrow-forward-outline"></ion-icon>
+        </a>
     </div>
 </header>
 <section class="intro">
@@ -145,27 +150,27 @@
     </div>
 </section>
 <section class="works">
-<div class="wrap works__wrap">
-    <h3 class="sub-title">Works</h3>
-    <h4 class="works__title">A collection of our latest works</h4>
-    <div class="works__row">
-        <div class="works__column">
-            <img src="https://source.unsplash.com/kUi9qLO-L6I" alt="work">
-            <img src="https://source.unsplash.com/w17rvzEglgY" alt="work">
+    <div class="wrap works__wrap">
+        <h3 class="sub-title">Works</h3>
+        <h4 class="works__title">A collection of our latest works</h4>
+        <div class="works__row">
+            <div class="works__column">
+                <img src="https://source.unsplash.com/kUi9qLO-L6I" alt="work">
+                <img src="https://source.unsplash.com/w17rvzEglgY" alt="work">
+            </div>
+            <div class="works__column">
+                <img src="https://source.unsplash.com/onLbXleIkds" alt="work">
+                <img src="https://source.unsplash.com/76EOO-b_Esw" alt="work">
+            </div>
+            <div class="works__column">
+                <img src="https://source.unsplash.com/SEC-jWIsqVs" alt="work">
+                <img src="https://source.unsplash.com/PM4Vu1B0gxk" alt="work">
+            </div>
         </div>
-        <div class="works__column">
-            <img src="https://source.unsplash.com/onLbXleIkds" alt="work">
-            <img src="https://source.unsplash.com/76EOO-b_Esw" alt="work">
-        </div>
-        <div class="works__column">
-            <img src="https://source.unsplash.com/SEC-jWIsqVs" alt="work">
-            <img src="https://source.unsplash.com/PM4Vu1B0gxk" alt="work">
-        </div>
+        <a href="#" class="works__button button">
+            View all
+        </a>
     </div>
-    <a href="#" class="works__button button">
-        View all
-    </a>
-</div>
 </section>
 <section class="goals">
     <div class="goals__sidebar sidebar">
@@ -185,14 +190,19 @@
 
 </section>
 <section class="video">
-    <a href="#" class="video__button"><ion-icon name="play" class="video-play-icon"></ion-icon></a>
+    <a href="#" class="video__button">
+        <ion-icon name="play" class="video-play-icon"></ion-icon>
+    </a>
     <h3 class="video__title title">We Strive For Excellence In Everything We Do</h3>
 </section>
 <footer class="main-footer">
     <div class="wrap main-footer__wrap">
         <div class="main-footer__body">
             <div class="main-footer__subscribe">
-                <h4 class="main-footer__title"><ion-icon name="mail"></ion-icon>Subscribe to our Newsletter!</h4>
+                <h4 class="main-footer__title">
+                    <ion-icon name="mail"></ion-icon>
+                    Subscribe to our Newsletter!
+                </h4>
                 <div class="main-footer__submit">
                     <input type="text" placeholder="email@website.com">
                     <a href="#" class="main-footer-submit-button">Submit</a>

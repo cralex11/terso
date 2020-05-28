@@ -1,0 +1,262 @@
+
+$color-primary: #f4f4f4f4;
+$color-secondary: #333;
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*RESETS*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.main-header {
+  height: 100vh;
+  color: $color-primary;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/e94T5ag-9x0") center center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  /* .main-header__nav */
+  &__nav {
+    text-align: center;
+  }
+}
+
+.nav {
+  /* .nav__list */
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  /* .nav__item */
+  &__item {
+    width: 200px;
+  }
+
+  /* .nav__link */
+  &__link {
+    //border: 1px solid;
+    background-color: rgba(69, 61, 55, 0.4);
+    border-radius: 10px;
+    padding: .8rem 0;
+    width: 100%;
+    margin: .2rem 0;
+    display: inline-block;
+  }
+
+  /* .nav__title */
+  &__title {
+    margin-bottom: .5rem;
+  }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+
+}
+
+.header {
+  /* .header__column */
+  &__column {
+  }
+
+  /* .header__sub-title */
+  &__sub-title {
+  }
+
+  /* .header__title */
+  &__title {
+  }
+
+  /* .header__description */
+  &__description {
+  }
+
+  /* .header__button */
+  &__button {
+  }
+}
+
+.column {
+}
+
+.sub-title {
+}
+
+.title {
+}
+
+.description {
+}
+
+.button {
+}
+
+.intro {
+  /* .intro__sub-title */
+  &__sub-title {
+  }
+
+  /* .intro__row */
+  &__row {
+  }
+
+  /* .intro__column */
+  &__column {
+  }
+}
+
+.item-info {
+  /* .item-info__icon */
+  &__icon {
+  }
+
+  /* .item-info__title */
+  &__title {
+  }
+
+  /* .item-info__text */
+  &__text {
+  }
+}
+
+.philosophy {
+  /* .philosophy__sidebar */
+  &__sidebar {
+  }
+
+  /* .philosophy__img */
+  &__img {
+  }
+}
+
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.sidebar {
+  /* .sidebar__aside */
+  &__aside {
+  }
+
+  /* .sidebar__quote */
+  &__quote {
+  }
+
+  /* .sidebar__footer */
+  &__footer {
+  }
+
+  /* .sidebar__img */
+  &__img {
+  }
+}
+
+.experience {
+  /* .experience__sidebar */
+  &__sidebar {
+  }
+
+  /* .experience__title */
+  &__title {
+  }
+
+  /* .experience__text */
+  &__text {
+  }
+}
+
+.text {
+}
+
+.works {
+  /* .works__wrap */
+  &__wrap {
+  }
+
+  /* .works__title */
+  &__title {
+  }
+
+  /* .works__row */
+  &__row {
+  }
+
+  /* .works__column */
+  &__column {
+  }
+
+  /* .works__button */
+  &__button {
+  }
+}
+
+.goals {
+  /* .goals__sidebar */
+  &__sidebar {
+  }
+}
+
+.video {
+  /* .video__button */
+  &__button {
+  }
+
+  /* .video__title */
+  &__title {
+  }
+}
+
+.video-play-icon {
+}
+
+.main-footer {
+  /* .main-footer__wrap */
+  &__wrap {
+  }
+
+  /* .main-footer__body */
+  &__body {
+  }
+
+  /* .main-footer__subscribe */
+  &__subscribe {
+  }
+
+  /* .main-footer__title */
+  &__title {
+  }
+
+  /* .main-footer__submit */
+  &__submit {
+  }
+
+  /* .main-footer__more */
+  &__more {
+  }
+
+  /* .main-footer__text */
+  &__text {
+  }
+
+  /* .main-footer__social */
+  &__social {
+  }
+}
+
+.main-footer-submit-button {
+}

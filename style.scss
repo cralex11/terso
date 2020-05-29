@@ -1,10 +1,14 @@
 $color-primary: #f4f4f4f4;
 $color-secondary: #333;
 $color-link: rgba(51, 51, 51, 0.8);
+$color-title: #1c1a1a;
 
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 /*RESETS*/
@@ -15,8 +19,11 @@ a {
 
 
 .main-header {
-  height: 100vh;
+  height: 80vh;
   color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/e94T5ag-9x0") center center no-repeat;
   -webkit-background-size: cover;
@@ -25,7 +32,7 @@ a {
   /* .main-header__nav */
   &__nav {
     color: $color-secondary;
-    font-size: 1.2rem;
+    font-size: .91rem;
     background-color: #fff;
     padding-bottom: 1rem;
   }
@@ -86,6 +93,16 @@ a {
 .header {
   /* .header__column */
   &__column {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 28px;
+    font-weight: 300;
+    min-height: 430px;
+    padding-top: 110px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   /* .header__sub-title */
@@ -94,21 +111,62 @@ a {
 
   /* .header__title */
   &__title {
+    line-height: 140%;
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 2.4rem;
   }
 
   /* .header__description */
   &__description {
+    font-size: 1.09rem;
   }
 
   /* .header__button */
   &__button {
+    transition: background-color .2s;
+
+    #arrow{
+      margin-left: 4px;
+      margin-top: 1px;
+      color: $color-primary !important;
+      transition: transform .6s;
+    }
+
+    &:hover{
+      background-color: #7e9e93;
+    }
+
+    &:hover #arrow{
+      transform: translateX(8px);
+    }
+  }
+
+  &__footer{
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
   }
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .sub-title {
+  color: #91aea4;
+  line-height: 21px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .title {
@@ -118,11 +176,29 @@ a {
 }
 
 .button {
+  margin: 1rem 0;
+  display: flex;
+  min-height: 38px;
+  min-width: 120px;
+  padding: 13px 20px 10px;
+  border-radius: 25px;
+  background-color: #91aea4;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+  color: #edf8f8;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .intro {
-  /* .intro__sub-title */
-  &__sub-title {
+  /* .intro__title */
+  &__title {
+    margin-top: .8rem;
+    font-weight: 300;
+    margin-bottom: .5rem;
+    color: $color-title;
   }
 
   /* .intro__row */

@@ -17,40 +17,58 @@ a {
   /* .main-header__nav */
 }
 .main-header__nav {
-  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding-bottom: 1rem;
 }
 
 .nav {
   /* .nav__list */
   /* .nav__item */
   /* .nav__link */
-  /* .nav__title */
+  /* .nav__toggle */
 }
 .nav__list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  display: none;
 }
 .nav__item {
-  width: 200px;
+  text-align: center;
+  margin: 15px auto;
 }
 .nav__link {
-  background-color: rgba(69, 61, 55, 0.4);
-  border-radius: 10px;
-  padding: 0.8rem 0;
-  width: 100%;
-  margin: 0.2rem 0;
-  display: inline-block;
+  text-decoration: none;
+  color: rgba(51, 51, 51, 0.8);
 }
-.nav__title {
-  margin-bottom: 0.5rem;
+.nav__link:hover {
+  color: #333;
+}
+.nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  /*todo: to fix this icon*/
+  color: #f3f;
+  font-size: 2rem;
+}
+.nav__toggle:hover {
+  color: #333;
 }
 
 .logo {
-  font-weight: bold;
+  display: inline-block;
   font-size: 1.6rem;
+  margin-top: 0.6rem;
+  margin-left: 1.2rem;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+.logo:hover {
+  color: rgba(51, 51, 51, 0.8);
 }
 
 .header {
@@ -114,6 +132,44 @@ a {
   /* .main-footer__more */
   /* .main-footer__text */
   /* .main-footer__social */
+}
+@media screen and (min-width: 768px) {
+  .main-header {
+    /* .main-header__nav */
+  }
+  .main-header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .nav {
+    /* .nav__list */
+    /* .nav__item */
+    /* .nav__link */
+    /* .nav__toggle */
+  }
+  .nav__list {
+    display: flex !important;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav__item {
+    margin: 0;
+  }
+  .nav__link {
+    margin-left: 40px;
+  }
+  .nav__toggle {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

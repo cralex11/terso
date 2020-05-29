@@ -21,12 +21,13 @@
 
 
 <header class="main-header">
-    <div class="main-header__nav nav">
-        <ul class="nav__list">
-            <li class="nav__item logo">
-                <a href="#"
-                   class="nav__link nav__title">terso</a>
-            </li>
+    <nav class="main-header__nav nav">
+        <span class="nav__toggle" id="navbar-toggle">
+            <ion-icon name="menu-outline" class="nav__menu-icon"></ion-icon>
+        </span>
+        <a href="#"
+           class="nav__link nav__title logo">terso</a>
+        <ul class="nav__list" id="main-nav">
             <li class="nav__item">
                 <a href="#"
                    class="nav__link">About
@@ -54,7 +55,7 @@
                     Us</a>
             </li>
         </ul>
-    </div>
+    </nav>
     <div class="header__column column">
         <h3 class="sub-title header__sub-title">
             Agency</h3>
@@ -225,5 +226,7 @@
         </div>
     </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

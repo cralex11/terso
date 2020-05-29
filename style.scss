@@ -7,7 +7,7 @@ $color-title: #1c1a1a;
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 140%;
   font-weight: 300;
 }
 
@@ -19,7 +19,7 @@ a {
 
 
 .main-header {
-  height: 80vh;
+  //height: 80vh;
   color: $color-primary;
   display: flex;
   flex-direction: column;
@@ -98,15 +98,13 @@ a {
     line-height: 28px;
     font-weight: 300;
     min-height: 430px;
-    padding-top: 110px;
-    padding-bottom: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   /* .header__sub-title */
   &__sub-title {
+    padding-top: 30%;
   }
 
   /* .header__title */
@@ -114,7 +112,7 @@ a {
     line-height: 140%;
     font-weight: 400;
     margin: 1rem 0;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
 
   /* .header__description */
@@ -144,9 +142,9 @@ a {
 
   &__footer{
     background-color: #fff;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
-    padding-top: 4rem;
+    padding-top: 2rem;
     border-radius: 16px 16px 0 0;
     display: flex;
     justify-content: center;
@@ -193,45 +191,82 @@ a {
 }
 
 .intro {
+  text-align: center;
   /* .intro__title */
   &__title {
-    margin-top: .8rem;
+    width: 70%;
     font-weight: 300;
-    margin-bottom: .5rem;
+    margin: 1.6rem auto 4rem;
     color: $color-title;
+    line-height: 140%;
   }
 
   /* .intro__row */
   &__row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   /* .intro__column */
   &__column {
+    flex: 0 0 28%;
+
+    &:nth-child(1) .item-info__icon{
+      background-color: #EDF8F8;
+      color: #91AEA4;
+    }
+
+    &:nth-child(2) .item-info__icon{
+      background-color: #FFF6F4;
+      color: #FFA38F;
+    }
+
+    &:nth-child(3) .item-info__icon{
+      background-color: #EDEAF5;
+      color: #8B78BF;
+    }
   }
 }
 
 .item-info {
   /* .item-info__icon */
   &__icon {
+    padding: 1rem;
+    border-radius: 100px;
+    font-size: 10vw;
+    margin-bottom: 1rem;
   }
 
   /* .item-info__title */
   &__title {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   /* .item-info__text */
   &__text {
+    font-size: .92rem;
+    line-height: 140%;
   }
 }
 
 .philosophy {
   /* .philosophy__sidebar */
   &__sidebar {
+
   }
 
   /* .philosophy__img */
   &__img {
+
   }
+}
+
+img{
+  width: 100px;
 }
 
 .wrap {
@@ -241,8 +276,11 @@ a {
 }
 
 .sidebar {
+  display: flex;
+
   /* .sidebar__aside */
   &__aside {
+    flex: 0 0 45%;
   }
 
   /* .sidebar__quote */
@@ -255,6 +293,7 @@ a {
 
   /* .sidebar__img */
   &__img {
+    flex: 0 0 45%;
   }
 }
 

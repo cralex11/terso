@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 140%;
   font-weight: 300;
 }
 
@@ -12,7 +12,6 @@ a {
 }
 
 .main-header {
-  height: 80vh;
   color: #f4f4f4f4;
   display: flex;
   flex-direction: column;
@@ -90,17 +89,17 @@ a {
   line-height: 28px;
   font-weight: 300;
   min-height: 430px;
-  padding-top: 110px;
-  padding-bottom: 140px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+.header__sub-title {
+  padding-top: 30%;
 }
 .header__title {
   line-height: 140%;
   font-weight: 400;
   margin: 1rem 0;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
 }
 .header__description {
   font-size: 1.09rem;
@@ -122,9 +121,9 @@ a {
 }
 .header__footer {
   background-color: #fff;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 2rem;
   border-radius: 16px 16px 0 0;
   display: flex;
   justify-content: center;
@@ -164,25 +163,69 @@ a {
 }
 
 .intro {
+  text-align: center;
   /* .intro__title */
   /* .intro__row */
   /* .intro__column */
 }
 .intro__title {
-  margin-top: 0.8rem;
+  width: 70%;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  margin: 1.6rem auto 4rem;
   color: #1c1a1a;
+  line-height: 140%;
 }
+.intro__row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.intro__column {
+  flex: 0 0 28%;
+}
+.intro__column:nth-child(1) .item-info__icon {
+  background-color: #EDF8F8;
+  color: #91AEA4;
+}
+.intro__column:nth-child(2) .item-info__icon {
+  background-color: #FFF6F4;
+  color: #FFA38F;
+}
+.intro__column:nth-child(3) .item-info__icon {
+  background-color: #EDEAF5;
+  color: #8B78BF;
+}
+
 .item-info {
   /* .item-info__icon */
   /* .item-info__title */
   /* .item-info__text */
 }
+.item-info__icon {
+  padding: 1rem;
+  border-radius: 100px;
+  font-size: 10vw;
+  margin-bottom: 1rem;
+}
+.item-info__title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.item-info__text {
+  font-size: 0.92rem;
+  line-height: 140%;
+}
+
 .philosophy {
   /* .philosophy__sidebar */
   /* .philosophy__img */
 }
+img {
+  width: 100px;
+}
+
 .wrap {
   width: 95%;
   margin: 0 auto;
@@ -190,11 +233,19 @@ a {
 }
 
 .sidebar {
+  display: flex;
   /* .sidebar__aside */
   /* .sidebar__quote */
   /* .sidebar__footer */
   /* .sidebar__img */
 }
+.sidebar__aside {
+  flex: 0 0 45%;
+}
+.sidebar__img {
+  flex: 0 0 45%;
+}
+
 .experience {
   /* .experience__sidebar */
   /* .experience__title */

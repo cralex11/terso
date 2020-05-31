@@ -2,6 +2,7 @@ $color-primary: #f4f4f4f4;
 $color-secondary: #333;
 $color-link: rgba(51, 51, 51, 0.8);
 $color-title: #1c1a1a;
+$color-sub-title: #91aea4;
 
 
 body {
@@ -160,7 +161,7 @@ a {
 }
 
 .sub-title {
-  color: #91aea4;
+  color: $color-sub-title;
   line-height: 21px;
   text-transform: capitalize;
   font-weight: 400;
@@ -259,6 +260,10 @@ a {
 
   }
 
+  /* .philosophy__aside */
+  &__aside{
+  }
+
   /* .philosophy__img */
   &__img {
 
@@ -266,7 +271,8 @@ a {
 }
 
 img{
-  width: 100px;
+  height: 100px;
+  width: auto;
 }
 
 .wrap {
@@ -277,23 +283,44 @@ img{
 
 .sidebar {
   display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+
 
   /* .sidebar__aside */
   &__aside {
-    flex: 0 0 45%;
   }
 
   /* .sidebar__quote */
   &__quote {
+    flex: 0 0 45%;
+    margin: 1rem  0 2.8rem 0;
+    font-size: 1.52rem;
+    position: relative;
+
+    &:after{
+      content: "";
+      background-color: $color-sub-title;
+      width: 45px;
+      height: 4px;
+      border-radius: 10px;
+      position: absolute;
+      bottom: -1.2rem;
+      left: 0;
+    }
   }
 
   /* .sidebar__footer */
   &__footer {
+    font-weight: 400;
+    color: #81848a;
+    font-size: 1.1rem;
   }
 
   /* .sidebar__img */
   &__img {
     flex: 0 0 45%;
+    height: 100%;
   }
 }
 

@@ -220,10 +220,12 @@ a {
 
 .philosophy {
   /* .philosophy__sidebar */
+  /* .philosophy__aside */
   /* .philosophy__img */
 }
 img {
-  width: 100px;
+  height: 100px;
+  width: auto;
 }
 
 .wrap {
@@ -234,16 +236,37 @@ img {
 
 .sidebar {
   display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
   /* .sidebar__aside */
   /* .sidebar__quote */
   /* .sidebar__footer */
   /* .sidebar__img */
 }
-.sidebar__aside {
+.sidebar__quote {
   flex: 0 0 45%;
+  margin: 1rem 0 2.8rem 0;
+  font-size: 1.52rem;
+  position: relative;
+}
+.sidebar__quote:after {
+  content: "";
+  background-color: #91aea4;
+  width: 45px;
+  height: 4px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+}
+.sidebar__footer {
+  font-weight: 400;
+  color: #81848a;
+  font-size: 1.1rem;
 }
 .sidebar__img {
   flex: 0 0 45%;
+  height: 100%;
 }
 
 .experience {

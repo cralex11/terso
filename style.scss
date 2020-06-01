@@ -193,6 +193,7 @@ a {
 
 .intro {
   text-align: center;
+
   /* .intro__title */
   &__title {
     width: 70%;
@@ -208,6 +209,12 @@ a {
     justify-content: space-between;
     max-width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    & > *{
+      margin-top: 2rem;
+    }
   }
 
   /* .intro__column */
@@ -435,7 +442,7 @@ img{
 
 .video {
   height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.48)), url("https://source.unsplash.com/BuQ1RZckYW4") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.48)), url("https://source.unsplash.com/BuQ1RZckYW4") center center no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
 
